@@ -4,7 +4,8 @@
   "description": "",
   "main": "scraper.js",
   "scripts": {
-    "dev": "node ./script.js"
+    "dev": "node ./script.js",
+    "prisma:studio": "prisma studio"
   },
   "keywords": [],
   "author": "",
