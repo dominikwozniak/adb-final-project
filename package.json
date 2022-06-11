@@ -1,0 +1,25 @@
+{
+  "name": "adv-db-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scraper.js",
+  "scripts": {
+    "dev": "node ./script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@prisma/client": "^3.14.0",
+    "prisma": "^3.14.0"
+  },
+  "dependencies": {
+    "apollo-server": "^3.6.6",
+    "apollo-server-core": "^3.6.6",
+    "apollo-server-express": "^3.6.6",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.3",
+    "graphql": "^16.5.0"
+  }
+}

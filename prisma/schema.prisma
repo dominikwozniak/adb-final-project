@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Forecast {
+    id          Int         @id @default(autoincrement())
+
+    city        String
+    temperature Float       @default(0)
+    date        String
+    timestamp   Float       @default(0)
+    description String
+
+    updatedAt   DateTime    @updatedAt
+    createdAt   DateTime    @default(now())
+}
+
+model Observation {
+    id          Int         @id @default(autoincrement())
+
+    city        String
+    tempAvg     Float       @default(0)
+    tempMin     Float       @default(0)
+    tempMax     Float       @default(0)
+    date        String
+    timestamp   Float       @default(0)
+    description String
+
+    updatedAt   DateTime    @updatedAt
+    createdAt   DateTime    @default(now())
+}
